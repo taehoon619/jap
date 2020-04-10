@@ -1,0 +1,254 @@
+.netflix_free {
+    width: 100%;
+}
+
+.netflix_free_container {
+    width: 100%;
+    border-bottom: 8px solid #222;
+    background-image: url(../img/free/netflix_01_main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.netflix_back {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, 
+    rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.netflix_top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 56px;
+    padding-top: 20px;
+}
+.netflix_logo img {
+    padding-top: 0.5rem;
+    height: 45px;
+    width: 167px;
+}
+.netflix_rog_wrap {
+
+}
+
+.netflix_rog {
+    background-color: #e50914;
+    padding: 7px 17px;
+    border-radius: 0.15em;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+    text-align: center; 
+}
+/* 컨텐츠 시작 */
+.netflix_content {
+    padding: 70px 40px;
+}
+
+.netflix_text {
+    max-width: 950px;
+    width: 100%;
+    padding: 75px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.netflix_text h1 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.netflix_text h2 {
+    margin: 16px auto;
+}
+
+.netflix_text form {
+    width: 760px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.email_add {
+    width: 500px;
+    height: 100%;
+    line-height: 70px;
+    background-color: white;
+    color: gray; padding: 0 20px;
+    font-size: 18px;
+}
+
+.free_30 {
+    width: 260px;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    background-color: #e50914;
+    font-size: 20px;
+    color: white;
+}
+
+.netflix_text h3 {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.netflix_tv {
+    padding: 70px 45px;
+    background-color: black;
+    border-bottom: 8px solid #222;
+}
+
+.netflix_tv_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.netflix_tv_text {
+    width: 52%;
+    height: 100%;
+    padding: 0px 48px 0px 0px;
+}
+/* 왜 마진 탑이 들어갈까 */
+.netflix_tv_text h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.netflix_tv_text h2 {
+    margin: 19.5px 0px 6.5px;
+}
+
+.tv_image {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    box-sizing: border-box;
+}
+
+.tv_image_wrap {
+    margin: -10% -5% -5% 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+/* tv 크기 문제 */
+.tv_image img {
+    max-width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* 스크린도 안맞는다 */
+.tv_screen {
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    max-height: 50%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.netflix_mobile {
+    padding: 70px 45px;
+    background-color: black;
+    border-bottom: 8px solid #222;
+}
+
+.netflix_mobile_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.netflix_mobile_text {
+    width: 52%;
+    height: 100%;
+    padding: 0px 0px 48 px 0px;
+}
+
+/* 왜 마진 탑이 들어갈까 */
+.netflix_mobile_text h1 {
+    margin-bottom: 8px;
+}
+
+.netflix_mobile_text h2 {
+    margin: 19.5px 0px 6.5px;
+}
+
+.mobile_image {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    box-sizing: border-box;
+    padding-right: 90px;
+    position: relative;
+}
+
+.mobile_image_wrap {
+    margin: -10% -5% -5% 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* tv 크기 문제 */
+.mobile_image img {
+    max-width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* 스크린도 안맞는다 */
+.mobile_screen {
+    padding: 8px 12px;
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: black;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 60%;
+    min-width: 15em;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.75em;
+}
+
+.mobile_screen_wrap {
+    display: flex;
+}
+
+.mobile_boxshot { margin-right: 20px;}
+
+.mobile_screen_wrap img {
+    height: 5em;
+}
+
+.mobile_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile_content a { margin-top: 10px;
+   
+}
