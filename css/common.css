@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: NetflixSans_W_Bd;
     src: url(NetflixSans_W_Lt.woff2);
 }
@@ -16,33 +16,34 @@ body {
 
 /* font_color */
 .color_white {
-    color:white;
+    color: white;
 }
 
 h1 {
     font-family: NetflixSans_W_Bd;
     font-size: 64px;
     font-weight: 700;
-    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
 .h1_blk {
     font-family: NetflixSans_W_Blk;
     font-size: 50px;
     font-weight: 700;
-    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
 }
 
 h2 {
     font-family: NetflixSans_W_Bd;
     font-size: 26px;
     font-weight: 400;
-     -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
 h3 {
     font-family: NetflixSans_W_Bd;
     font-size: 19.2px;
     font-weight: 400;
-    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing: antialiased;
 }

@@ -13,8 +13,12 @@
 .netflix_back {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, 
-    rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.4) 100%);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
 }
 
 .netflix_top {
@@ -25,22 +29,20 @@
 }
 .netflix_logo img {
     padding-top: 0.5rem;
-    height: 45px;
-    width: 167px;
+    height: 32px;
+    width: 108px;
 }
 .netflix_rog_wrap {
-
 }
 
 .netflix_rog {
     background-color: #e50914;
-    padding: 7px 17px;
-    border-radius: 0.15em;
-    margin-top: 15px;
+    padding: 9px 19px;
+    border-radius: 3px;
+    margin-top: 8px;
     font-weight: 400;
     font-size: 1rem;
     display: block;
-    text-align: center; 
 }
 /* 컨텐츠 시작 */
 .netflix_content {
@@ -56,12 +58,13 @@
 }
 
 .netflix_text h1 {
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
+    word-break: keep-all;
 }
 
 .netflix_text h2 {
-    margin: 16px auto;
+    margin: 1rem auto;
 }
 
 .netflix_text form {
@@ -78,16 +81,18 @@
     height: 100%;
     line-height: 70px;
     background-color: white;
-    color: gray; padding: 0 20px;
+    color: gray;
+    padding: 0 20px;
     font-size: 18px;
+    text-align: left;
 }
 
 .free_30 {
     width: 260px;
     height: 100%;
-    line-height: 70px;
     text-align: center;
     background-color: #e50914;
+    border: 1px solid #e50914;
     font-size: 20px;
     color: white;
 }
@@ -120,7 +125,8 @@
 /* 왜 마진 탑이 들어갈까 */
 .netflix_tv_text h1 {
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 30px;
+    word-break: keep-all;
 }
 
 .netflix_tv_text h2 {
@@ -144,23 +150,33 @@
 }
 /* tv 크기 문제 */
 .tv_image img {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     border: 0;
+    position: relative;
+    z-index: 2;
 }
 
 /* 스크린도 안맞는다 */
 .tv_screen {
     width: 100%;
     height: 100%;
-    max-width: 70%;
-    max-height: 50%;
+    max-width: 75%;
+    max-height: 55%;
     position: absolute;
     top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.tv_screen video {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: contain;
+}
+
+/* 모바일 */
 .netflix_mobile {
     padding: 70px 45px;
     background-color: black;
@@ -178,7 +194,7 @@
 .netflix_mobile_text {
     width: 52%;
     height: 100%;
-    padding: 0px 0px 48 px 0px;
+    padding: 0px 0px 48px 0px;
 }
 
 /* 왜 마진 탑이 들어갈까 */
@@ -237,7 +253,9 @@
     display: flex;
 }
 
-.mobile_boxshot { margin-right: 20px;}
+.mobile_boxshot {
+    margin-right: 20px;
+}
 
 .mobile_screen_wrap img {
     height: 5em;
@@ -249,6 +267,203 @@
     justify-content: center;
 }
 
-.mobile_content a { margin-top: 10px;
-   
+.mobile_content a {
+    margin-top: 10px;
+}
+
+.netflix_device {
+    padding: 70px 45px;
+    background-color: black;
+    border-bottom: 8px solid #222;
+}
+
+.netflix_device_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.netflix_device_text {
+    width: 52%;
+    height: 100%;
+    padding: 0px 48px 0px 0px;
+}
+/* 왜 마진 탑이 들어갈까 */
+.netflix_device_text h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.netflix_device_text h2 {
+    margin: 19.5px 0px 6.5px;
+}
+
+.device_image {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    box-sizing: border-box;
+}
+
+.device_image_wrap {
+    margin: -10% -10% 0 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+/* tv 크기 문제 */
+.device_image img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* 스크린도 안맞는다 */
+.device_screen {
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.device_screen video {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.netflix_qna {
+    text-align: center;
+    padding: 70px 45px;
+    background-color: black;
+    border-bottom: 8px solid #222;
+    color: white;
+}
+
+.netflix_qna_container {
+    font-size: 1.625rem;
+}
+
+.netflix_qna_container h1 {
+    margin-bottom: 8px;
+}
+
+.qna_list {
+    width: 75%;
+    margin: 52px auto;
+    max-width: 815px;
+}
+
+.qna_list h2 {
+    margin: 0 0 8px 0;
+}
+
+.qna_list button {
+    background-color: #303030;
+    text-align: left;
+    display: block;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    margin-bottom: 1px;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    border: 0;
+}
+
+.qna_email {
+    width: 100%;
+}
+
+.qna_email form {
+    padding-top: 13.6px;
+    width: 760px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.qna_email h3 {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* footer */
+.netflix_footer {
+    padding: 70px 45px;
+    background-color: black;
+    display: block;
+}
+
+.netflix_footer_warp {
+    width: 1000px;
+    margin: 0 auto;
+}
+.netflix_footer_container {
+    width: 100%;
+    margin-top: 0;
+    min-height: 190px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    color: #757575;
+    position: relative;
+}
+
+.netflix_footer_content {
+    padding-top: 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.netflix_footer_content p {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.footer_list {
+    width: 1000px;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.footer_list div {
+    width: 24%;
+    margin-bottom: 16px;
+    padding-right: 12px;
+    display: inline-block;
+}
+
+.footer_country {
+    font-size: 13px;
+    margin-top: 24px;
+    -webkit-font-smoothing: antialiased;
+}
+.copy_text {
+    display: block;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.copy_text div {
+    color: #808080;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 4px;
+    -webkit-font-smoothing: antialiased;
 }
