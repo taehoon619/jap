@@ -11,6 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/netflix.css">
 
+    <script>
+        src="https://kit.fontawesoe.com/53dc0a0ec3.js"
+        crossorigin="anonymous"
+    </script>
+
 </head>
 
 <body>
@@ -127,6 +132,7 @@
                     <h2><button>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</button></h2>
                     <h2><button>무료 이용에 관해 자세히 알 수 있을까요?</button></h2>
                 </div>
+
                 <div class="qna_email">
                     <form action="join.php" class="netflix_text_form">
                         <input type="email" id="email" name="user_eamil" class="email_add" placeholder="이메일 주소"></input>
@@ -161,7 +167,18 @@
                         <div>법적 고지</div>
                         <div>Netflix 오리지널</div>
                     </div>
-                    <div></div>
+                    <div class="footer_select_container">
+                        
+                        <label for="select_language">
+                            <i class="fas fa-globe"></i>
+                        </label>
+                        <select id="select_language" class="footer_select" onchange="window.open(options[selectedIndex].value);">
+                            <option selected value="https://netflix.com/kr/" data-language="ko" data-country="KR">
+                                한국어 &#9660</option>
+                            <option elected value="https://netflix.com/kr-en/" data-language="en" data-country="KR">
+                                English &#9660</option>
+                        </select>
+                    </div>
                     <p class="footer_country">Netflix 대한민국</p>
                         <div class="copy_text">
                             <div>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호:</div>

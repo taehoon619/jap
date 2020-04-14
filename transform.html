@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/transform.css">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: yellow;
+            width: 500px; 
+            height: 500px;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        .hour{
+            background-color: green;
+            transform-origin: 50% 100%;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            width: 10px;
+            height: 230px;
+            animation-name: hour;
+            animation-timing-function:linear;
+            animation-duration: 80s;
+            animation-iteration-count: infinite;
+            /* animation-duration: 21600s; */
+        }
+
+        .min{
+            background-color: red;
+            transform-origin: 50% 100%;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            width: 10px;
+            height: 230px;
+            animation-name: min;
+            animation-timing-function: linear;
+            animation-duration: 50s;
+            animation-iteration-count: infinite;
+            /* animation-duration: 3600s; */
+            }
+
+        .sec{
+            background-color: blue;
+            transform-origin: 50% 100%;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            width: 5px;
+            height: 230px;
+            animation-name: sec;
+            animation-timing-function: linear;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes sec {
+            from {transform: rotate(0);}
+            to {transform: rotate(360deg);}
+        }
+
+        @keyframes min {
+        from {transform: rotate(0);}
+        to {transform: rotate(360deg);}
+        }
+        
+        @keyframes hour {
+        from {transform: rotate(0);}
+        to {transform: rotate(360deg);}
+        }
+
+        
+    
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="hour"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
+        <div class="clock">
+            
+
+        </div>
+    </div>
+
+</body>
+</html>

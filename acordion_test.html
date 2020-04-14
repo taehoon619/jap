@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .accordion_button {
+            width: 600px; 
+            height: 80px; 
+            background-color: #303030; 
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        .panel {
+            width: 600px; 
+            height: auto; 
+            padding: 40px; 
+            box-sizing: border-box;
+            background-color: #303030; 
+            color: white; 
+            display: none; 
+            overflow: hidden;
+        }
+
+        .icon_plus {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+
+    <script>
+        
+        function accordionAction(target) {
+            if (target.nextElementSibling.style.display == 'block') {
+                target.nextElementSibling.style.display = 'none';
+                }
+            else { 
+                target.nextElementSibling.style.display = 'block';
+                }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    
+    <button class="accordion_button"  onclick="accordionAction(this);">
+        <h3>넷플릭스란 무엇인가요?</h3>
+        <img src="img/icon_plus.svg" class="icon_plus">
+    </button>
+  
+    <div class="panel">
+        <h3>넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.<br><br>저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV 프로그램과 영화가 제공됩니다.</h3>
+    </div>
+
+    <button class="accordion_button" onclick="accordionAction(this);">
+        <h3>애런 리</h3>
+        <img src="img/icon_plus.svg" class="icon_plus">
+    </button>
+
+    <div class="panel">
+        <h3>애런 리, 마이클 킴, 메이슨 양
+        </h3>
+    </div>
+
+    <button class="accordion_button" onclick="accordionAction(this);">
+        <h3>양성민 김종욱</h3>
+        <img src="img/icon_plus.svg" class="icon_plus">
+    </button>
+
+    <div class="panel">
+        <h3>전설의 듀오, 보컬과 댄스의 마스터, 김종욱은 한때 마이클 잭슨의 스승이였으며 국대에서 조용필의 보컬을 가르치다 뺨을 맞고 개망신을 당한 후 아무일 없다는 듯 행동하다 조용필의 부하 양성민에게 쳐맞고 팀을 이루기로 함 
+        양성민은 전설의 복서 출신으로 조용필 밑에서 수금을 다니다 나훈아를 만나 가수가 되기로 결심하여 김종욱과 팀을 이룬다. 김종욱은 홍콩에서 주윤발과 총격전을 벌이다 한쪽 다리를 잃었으며 이연걸의 도움으로 탈출하고 양성민은 뒤늦게 등장해 배가 아파서 늦게왔다는 명언을 날려 주윤발을 제압했다.
+        </h3>
+    </div>
+
+</body>
+</html>

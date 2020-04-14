@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>사용자 개인 정보</legend>
+                <label for="user_name">이름</label>
+                <input type="text" id="user_name" name="u_name"><br>
+                <label for="user_sex">당신의 성별은?</label><br>
+                <label for="user_sex">남</label><input type="radio" id="uesr_sex" name="u_sex"> <label for="user_sex">여</label><input type="radio"
+                    id="uesr_sex" name="u_sex"><br><br>
+
+                <label for="car_select">선호하는 브랜드</label>
+                <select id="car_select" name="car_brand" size="1">
+                    <optgroup label="외제차">
+                    <option value="Ferari">페라리</option>
+                    <option value="benz" selected>벤츠</option>
+                    </optgroup>
+                    <optgroup label="국산차">
+                    <option value="bmw">BMW</option>
+                    <option value="chevore">쉐보레</option>
+                    </optgroup>
+                </select> <br><br>
+        </fieldset>
+
+        <label for="user_browsers">사용 브라우져</label>
+        <input id="user_browsers" list="browsers" name="u_browsers">
+            <datalist id="browsers">
+                <option value="IE">IE</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Safari">Safari</option>
+                <option value="Opera">Opera</option>
+            </datalist> <br>
+
+        <label for="user_review">사용 후기</label><br>
+        <textarea id="user_review" name="u_review" style="width: 200px; height: 200px;">사용 후기를 작성해주세요</textarea><br>
+
+        <button type="button" onclick="alert('성공')">Click</button> <br>
+
+        <input type="button"><br>
+        <input type="checkbox"><br>
+        <input type="color"><br>
+        <input type="date"><br>
+        <input type="datetime-local"><br>
+        <input type="email"><br>
+        <input type="file"><br>
+        <input type="hidden"><br>
+        <input type="month"><br>
+        <input type="number" min="0" max="100" step="5"><br>
+        <input type="password"><br>
+        <label for="male">남자</label>
+        <input type="radio" id="male" value="male" name="gender">
+        <label for="female">여자</label>
+        <input type="radio" id="female" value="female" name="gender"><br>
+        <input type="range"><br>
+        <input type="reset"><br>
+        <input type="search"><br>
+        <input type="submit"><br>
+        <input type="tel"><br>
+        <input type="text"><br>
+        <input type="time"><br>
+        <input type="url"><br>
+        <input type="week"><br>
+
+
+
+        <br> <input type="submit" >
+    </form>    
+
+</body>
+</html>
