@@ -1,0 +1,276 @@
+.netflix_free {
+    width: 100%;
+}
+
+.netflix_free_container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    background-image: url(../img/free/netflix_01_main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.netflix_back {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0.4) 100%);
+}
+
+.netflix_top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 56px;
+    padding-top: 20px;
+}
+
+.netflix_logo img {
+    padding-top: 0.5rem;
+    height: 40px;
+    width: 108px;
+    
+}
+
+.log_in {
+    margin: 0 auto -236px;
+    min-height: 100vh;
+    max-width: 450px;
+    margin-top: 90px;
+    opacity: 0.9;
+}
+
+
+.log_in_container {
+    min-height: 660px;
+    padding: 60px 68px 40px;
+    margin-bottom: 90px;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.log_in_text {
+    margin-bottom: 50px;
+}
+
+.log_in_text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.log_in_form {
+    margin-bottom: 0;
+    margin-top: 0em;
+}
+
+.log_in_form div {
+    position: relative;
+    padding-bottom: 16px;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.login_text {
+    background: #333;
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    padding: 16px 20px 0;
+    width: 100%;
+}
+
+
+.log_in_password {
+    background: #333;
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    padding: 16px 20px 0;
+    width: 100%;
+}
+
+.pw_label {
+    left: 20px;
+    top: 30%;
+    font-size: 16px;
+    position: absolute;
+    color: #8c8c8c;
+
+}
+
+.log_in_form button {
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 24px 0 12px;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    background: #e50914;
+    text-align: center;
+}
+
+.log_in_check {
+    color: #333;
+    display: flex;
+}
+
+.log_in_check input {
+    margin-right: 4px;
+    margin-top: 1px;
+}
+
+.log_in_check label {
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-right: 80px;
+}
+
+.log_in_check a {
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.2;
+    
+}
+
+.log_in_bottom {
+    color: #737373;
+    margin-top: ;
+}
+
+.log_in_bottom_from {
+    margin-top: 16px;
+    width: auto;
+}
+
+.facebook img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.facebook span {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.netflix_go {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.netflix_go span {
+    color: white;
+}
+
+.netflix_final {
+    margin-top: 11px;
+    font-size: 13px;
+    color: #8c8c8c;
+    text-align: left;
+}
+
+.netflix_final button {
+    color: #0071eb;
+    display: inline;
+}
+
+
+/* footer */
+.netflix_footer {
+    padding: 70px 45px;
+    background-color: black;
+    display: block;
+}
+
+.netflix_footer_warp {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.netflix_footer_container {
+    width: 100%;
+    margin-top: 0;
+    min-height: 190px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    color: #757575;
+    position: relative;
+}
+
+.netflix_footer_content {
+    padding-top: 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.netflix_footer_content p {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.footer_list {
+    width: 1000px;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.footer_list div {
+    width: 24%;
+    margin-bottom: 16px;
+    padding-right: 12px;
+    display: inline-block;
+}
+
+
+.footer_select_container {
+    margin-top: 20px;
+}
+
+.footer_select {
+    width: auto;
+    padding-left: 50px;
+    padding-right: 26px;
+}
+
+
+
+.footer_country {
+    font-size: 13px;
+    margin-top: 24px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.copy_text {
+    display: block;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.copy_text div {
+    color: #808080;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 4px;
+    -webkit-font-smoothing: antialiased;
+}
+
