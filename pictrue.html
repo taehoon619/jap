@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            font-size: 120px;
+            margin: 100px auto;
+            width: 300px;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1600px) {
+            h1 {
+            font-size: 72px; color: red;
+            }
+        }
+
+          @media screen and (max-width: 1024px) {
+            h1 {
+            font-size: 48px; color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello</h1>
+    </div>
+
+    <picture>
+        <source srcset="img/free/netflix_01_main.jpg" media="(min-width: 1024px)">
+        <source srcset="img/log_in/FB-f-Logo__blue_57.png" media="(min-width: 768px)">
+        <source srcset="img/free/boxshot.png" media="(min-width: 500px)">
+        <img src="img/free/device-pile.png" alt="divice">
+    </picture>
+    <div>
+        <h1 style="font-size: 5vw;">안녕하세요</h1>
+    </div>
+</body>
+</html>
