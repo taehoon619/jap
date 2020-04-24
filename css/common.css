@@ -28,6 +28,15 @@ h1 {
 
 .h1_blk {
     font-family: NetflixSans_W_Blk;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 54px;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
+}
+
+.h1_main {
+    font-family: NetflixSans_W_Blk;
     font-size: 64px;
     font-weight: 700;
     line-height: 80px;
@@ -109,12 +118,11 @@ h4 {
 
 .footer_select_container {
     margin-top: 20px;
+    padding: 12px;
 }
 
 .footer_select {
-    width: auto;
-    padding-left: 5px;
-    padding-right: 26px;
+    padding-left: 10px;
 }
 
 
