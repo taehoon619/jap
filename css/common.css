@@ -28,8 +28,9 @@ h1 {
 
 .h1_blk {
     font-family: NetflixSans_W_Blk;
-    font-size: 50px;
+    font-size: 64px;
     font-weight: 700;
+    line-height: 80px;
     -webkit-font-smoothing: antialiased;
     word-break: keep-all;
 }
@@ -45,5 +46,95 @@ h3 {
     font-family: NetflixSans_W_Bd;
     font-size: 19.2px;
     font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+h4 {
+    font-family: NetflixSans_W_Bd;
+    font-size: 26px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* footer */
+.netflix_footer {
+    width: 100%;
+    padding: 70px 45px;
+    background-color: black;
+    display: block;
+}
+
+.netflix_footer_warp {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.netflix_footer_container {
+    width: 100%;
+    margin-top: 0;
+    min-height: 190px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    color: #757575;
+    position: relative;
+}
+
+.netflix_footer_content {
+    padding-top: 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.netflix_footer_content p {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.footer_list {
+    max-width: 1000px;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.footer_list div {
+    width: 24%;
+    margin-bottom: 16px;
+    padding-right: 12px;
+    display: inline-block;
+}
+
+
+.footer_select_container {
+    margin-top: 20px;
+}
+
+.footer_select {
+    width: auto;
+    padding-left: 5px;
+    padding-right: 26px;
+}
+
+
+
+.footer_country {
+    font-size: 13px;
+    margin-top: 24px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.copy_text {
+    display: block;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.copy_text div {
+    color: #808080;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 4px;
     -webkit-font-smoothing: antialiased;
 }

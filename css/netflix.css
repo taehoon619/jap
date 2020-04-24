@@ -29,10 +29,8 @@
 }
 .netflix_logo img {
     padding-top: 0.5rem;
-    height: 40px;
-    width: 108px;
-}
-.netflix_rog_wrap {
+    height: 45px;
+    width: 167px;
 }
 
 .netflix_rog {
@@ -49,7 +47,7 @@
     padding: 70px 40px;
 }
 
-.netflix_text {
+.netflix_text { 
     max-width: 950px;
     width: 100%;
     padding: 75px 0;
@@ -67,9 +65,14 @@
     margin: 1rem auto;
 }
 
-.netflix_text form {
-    width: 760px;
-    height: 70px;
+.form_email_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.netflix_text_form {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,33 +80,46 @@
 }
 
 .email_add {
-    width: 500px;
-    height: 100%;
+    min-width: 550px;
+    height: 70px;
     line-height: 70px;
     background-color: white;
     color: gray;
     padding: 0 20px;
     font-size: 18px;
     text-align: left;
+    border-radius: 4px 0 0 4px;
 }
 
 .free_30 {
     width: 260px;
-    height: 100%;
+    height: 70px;
+    line-height: 50px;
     text-align: center;
     background-color: #e50914;
     border: 1px solid #e50914;
     font-size: 20px;
     color: white;
+    border-radius:0 4px 4px 0;
 }
 
-.netflix_text h3 {
+.email_text {
     margin: 0 auto;
     padding: 0;
     margin-top: 10px;
+    margin-bottom: 20px;
+}    
+
+.email_text_2 {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 10px;
+    display: block
 }
 
 .netflix_tv {
+    width: 100%;
+    height: auto;
     padding: 70px 45px;
     background-color: black;
     border-bottom: 8px solid #222;
@@ -179,6 +195,7 @@
 
 /* 모바일 */
 .netflix_mobile {
+    width: 100%;
     padding: 70px 45px;
     background-color: black;
     border-bottom: 8px solid #222;
@@ -362,13 +379,57 @@
 .netflix_qna_container h1 {
     margin-bottom: 8px;
 }
-
+/* 아코디언 */
 .qna_list {
     width: 75%;
     margin: 52px auto;
-    max-width: 815px;
+    max-width: 850px;
 }
 
+.list_wrap {
+    margin: 0 0 8px 0;
+}
+
+.faq_accordion {
+    background-color: #303030;
+    text-align: left;
+    display: block;
+    margin-bottom: 1px;
+    padding: 20px 31px 20px 57px;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.faq_panel {
+    max-width: 1200px;
+    height: auto;
+    padding: 40px;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 400;
+    box-sizing: border-box;
+    background-color: #303030;
+    color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq_accordion::after {
+    background-image: url(../img/icon_plus.svg);
+    width: 24px;
+    height: 24px;
+    content: '';
+    transition: transform 0.2s;
+}
+
+.active::after {
+    transform: rotate(45deg);
+}
+/*
 .qna_list h2 {
     margin: 0 0 8px 0;
 }
@@ -391,7 +452,7 @@
 
 .qna_email form {
     padding-top: 13.6px;
-    width: 760px;
+    width: 100%;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -399,88 +460,197 @@
     margin: 0 auto;
 }
 
-.qna_email h3 {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    margin-top: 10px;
+*/
+
+
+
+@media screen and (max-width: 949px) {
+    .h1_blk {
+        font-size: 50px;
+    }
+
+    .form_email_container {
+        flex-direction: column-reverse;
+    }
+    .netflix_text_form {
+        flex-direction: column;
+        height: auto;
+    }
+    .email_add {
+        margin-bottom: 20px;
+        border-radius: 4px;
+        height: 60px;
+    }
+
+    .free_30 {
+        border-radius: 4px;
+        height: 44px;
+        width: 180px;
+    }
+    .email_text {
+        line-height: 18px;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    /* tv */
+
+    .netflix_tv_container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .netflix_tv_text {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 0px 48px 0px 0px;
+        word-break: keep-all;
+    }
+    .netflix_tv_text h1 {
+        margin-bottom: 8px;
+        font-size: 40px;
+    }
+
+    .netflix_tv_text h2 {
+        font-size: 20px;
+    }
+    
+    .tv_image {
+        width: 60%;
+        height: 100%;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex: 0 1 auto;
+        -webkit-box-flex: 0;
+        box-sizing: border-box;
+    }
+
+    .tv_image_wrap {
+        margin: -5% -5% -5% 0;
+        overflow: hidden;
+        display: block;
+        position: relative;
+    }
+    /* 모바일 */ 
+
+    .netflix_mobile_container {
+        max-width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .netflix_mobile_text {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 0px 48px 0px 0px;
+        word-break: keep-all;
+    }
+
+    .netflix_mobile_text h1 {
+        margin-bottom: 8px;
+        font-size: 40px;
+        line-height: 4  0px;
+    }
+
+    .netflix_mobile_text h2 {
+        font-size: 20px;
+    }
+
+    .mobile_image {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .mobile_image_wrap {
+        margin: 0 0 -5% 10%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* 디바이스 */
+
+    .netflix_device_container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .netflix_device_text {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 0px 48px 0px 0px;
+        word-break: keep-all;
+    }
+
+    .netflix_device_text h1 {
+        font-size: 40px;
+    }
+
+    .netflix_device_text h2 {
+        font-size: 20px;
+    }
+
+    .device_image {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex: 0 1 auto;
+        -webkit-box-flex: 0;
+        box-sizing: border-box;
+    }
+
+    .device_image_wrap {
+        margin: 0 0 0 0;
+        overflow: hidden;
+        display: block;
+        position: relative;
+    }
+    /* 아코디언 */
+
+    .faq_accordion { width: 100%; min-width: 300px; height: 58px;}
+    .faq_accordion h2 {font-size: 20px;}
+    .faq_panel { width: 100%; font-size: 20px;}
+    .faq_text {
+        font-size: 20px;
+        color: white;
+    }
+ 
+
+@media screen and (max-width: 740px) {
+    .netflix_text_form {
+        height: 44px;
+    }
 }
 
-/* footer */
-.netflix_footer {
-    padding: 70px 45px;
-    background-color: black;
-    display: block;
+@media screen and (max-width: 549px) {
+    .netflix_content {
+        height: 512px;
+    }
+    .h1_blk {
+        font-size: 28px;
+    }
+    .netflix_text h2 {
+        font-size: 18px;
+    }
+    .email_add {
+        width: 100%;
+    }
+    
+    .email_text {
+        font: 10px;
+        font-weight: 100;
+        width: 60%;
+        line-height: 24px;
+    }
+    .netflix_logo img {
+        width: 120px; height: 28px; margin-left: -50px;
+    }
+    .netflix_rog {
+        font-size: 14px;
+        padding: 8px 10px;
+        margin-right: -20px;
 }
 
-.netflix_footer_warp {
-    width: 1000px;
-    margin: 0 auto;
-}
-.netflix_footer_container {
-    width: 100%;
-    margin-top: 0;
-    min-height: 190px;
-    padding-bottom: 20px;
-    font-size: 1rem;
-    color: #757575;
-    position: relative;
-}
+@media screen and (max-width: 500px) {
 
-.netflix_footer_content {
-    padding-top: 0;
-    margin: 0 auto;
-    width: 90%;
-}
-
-.netflix_footer_content p {
-    padding: 0;
-    margin-bottom: 30px;
-}
-
-.footer_list {
-    width: 1000px;
-    padding: 0;
-    margin: 0 auto;
-    font-size: 13px;
-    box-sizing: border-box;
-}
-
-.footer_list div {
-    width: 24%;
-    margin-bottom: 16px;
-    padding-right: 12px;
-    display: inline-block;
-}
-
-
-.footer_select_container {
-    margin-top: 20px;
-}
-
-.footer_select {
-    width: auto;
-    padding-left: 50px;
-    padding-right: 26px;
-}
-
-
-
-.footer_country {
-    font-size: 13px;
-    margin-top: 24px;
-    -webkit-font-smoothing: antialiased;
-}
-.copy_text {
-    display: block;
-    box-sizing: border-box;
-    margin: 20px 0;
-}
-
-.copy_text div {
-    color: #808080;
-    font-size: 12px;
-    line-height: 12px;
-    margin-top: 4px;
-    -webkit-font-smoothing: antialiased;
 }
