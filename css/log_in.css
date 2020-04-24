@@ -192,7 +192,6 @@
     display: inline;
 }
 
-
 /* footer */
 .netflix_footer {
     padding: 70px 45px;
@@ -274,3 +273,28 @@
     -webkit-font-smoothing: antialiased;
 }
 
+@media screen and (max-width: 740px) {
+    .netflix_top {
+        background-color: black;
+        width: 100%;
+        height: 90px;
+        margin-left: 0px;
+    }
+
+    .netflix_logo {
+        padding-left: 20px ;
+    }
+
+    .netflix_free_container {
+        background-image: url();
+    }
+
+    .log_in {
+        background-color: black;
+        padding: 90px 5%;
+    }
+    .log_in_container {
+        min-height: 480px;
+        padding: 20px 0 40px;
+    }
+}
