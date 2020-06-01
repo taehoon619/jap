@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>slide_v3</title>
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+<style>
+    h1 { 
+        font-size: 36px; line-height: 46px; font-family: sans-serif;
+    }
+    p {
+        font-size: 15px; line-height: 24px; font-family: sans-serif;
+    }
+    .slide_container {
+        width: 100%;
+        height: 80vh;
+        margin: 0 auto;
+        padding: 80px 0 80px;
+        position: relative;
+    }
+    .my_slide {
+        width: 100%;
+        height: 100%;
+        background-color: brown;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        display: none;
+    }
+
+    .my_slide:first-child {
+        display: block;
+    }
+
+    .my_slide:nth-child(1) {
+    background-image: url(img/navercorp/img_main_slide1.jpeg);
+     display: block;
+    }
+    .slide_logo:nth-child(1) {
+        bottom: 78px;
+        height: 36px;
+        background-position: 0 -1063px;
+        position: absolute;
+        right: 160px;
+        width: 190px;
+        background: url(img/navercorp/sprite.png);
+    }
+
+    .my_slide:nth-child(2) {
+    background-image: url(img/navercorp/img_main_slide2.jpeg);
+    }
+    .slide_logo:nth-child(2) {
+    bottom: 60px;
+    height: 53px;
+    background-position: -143px -1101px;
+    position: absolute;
+    right: 160px;
+    width: 190px;
+    background: url(img/navercorp/sprite.png);
+    }
+
+    .my_slide:nth-child(3) {
+    background-image: url(img/navercorp/img_main_slide3.jpeg);
+    }
+    .slide_logo:nth-child(3) {
+    bottom: 70px;
+    width: 134px;
+    height: 50px;
+    background-position: 0 -1104px;
+    position: absolute;
+    right: 160px;
+    background: url(img/navercorp/sprite.png);
+    }
+
+
+    .my_slide:nth-child(4) {
+    background-image: url(img/navercorp/img_main_slide4.jpeg);
+    }
+    .slide_logo:nth-child(4) {
+    bottom: 70px;
+    width: 168px;
+    height: 24px;
+    background-position: -192px -1162px;
+    position: absolute;
+    right: 160px;
+    background: url(img/navercorp/sprite.png);
+    }
+
+
+    .slide_content {
+        position: absolute;
+        left: 160px;
+        bottom: 187px;
+    }
+
+    .slide_content h1 {
+        margin-bottom: 20px;
+    }
+    .slide_progressbar {
+        width: calc(100% - 320px);
+        height: 1px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        position: absolute;
+        bottom:215px;
+        left: 160px;
+    }
+
+    .slide_progressbar_line {
+        width: 25%;
+        height: 1px;
+        border-top: 1px solid rgba(255, 255, 255, 1);
+        position: absolute;
+        bottom:0px;
+        left: 0px;
+    }
+
+
+    .content_text {
+        margin-bottom: 20px;
+    }
+
+    .button_next {
+        width: 46px;
+        height: 46px;
+        background-image: url(img/navercorp/sprite.png);
+        background-position: -346px -99px;
+        position: absolute;
+        bottom: 198px;
+        right: 85px;
+        color: white;
+        opacity: 0.8;
+    }
+
+    .button_previous {
+        width: 46px;
+        height: 46px;
+        background-image: url(img/navercorp/sprite.png);
+        background-position: -296px -99px;
+        position: absolute;
+        bottom: 198px;
+        left: 85px;
+        color: white;
+        opacity: 0.8;
+        transition: opacity: .3s;;
+    }
+    .button_next:hover {
+        opacity: 1  ;
+    }
+    .button_previous:hover {
+        opacity: 1;
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="slide_container">
+        <div class="my_slide">
+            <div class="slide_content">
+                <h1>삶의 가치를 높이는<br>기술을 연구합니다.</h1>
+                
+                <div>
+                    <p class="content_text">당신이 더 가치 있는 일에 몰입할 수 있도록<br>삶을 더 깊이 이해하는 기술을 만들어갑니다.</p>
+                    <p><strong>1</strong>&nbsp;&nbsp;ㅣ&nbsp;&nbsp;4</p>
+                </div>
+            </div>
+            <div class="slide_logo"></div>
+        </div>
+        <div class="my_slide">
+           <div class="slide_content">
+               <h1>무한한 가능성과의<br>만남을 기대합니다.</h1>
+               
+               <div>
+                   <p class="content_text">다양한 스몰비즈니스와 크리에이터의 가치가 발견되고<br>그 이름을 꽃 피울 수 있도록 함께합니다.</p>
+                   <p><strong>2</strong>&nbsp;&nbsp;ㅣ&nbsp;&nbsp;4</p>
+               </div>
+           </div>
+           <div class="slide_logo"></div>
+        </div>
+        <div class="my_slide">
+            <div class="slide_content">
+                <h1>더 넓은 세상에서<br>더 큰 미래를 생각합니다.</h1>
+                
+                <div>
+                    <p class="content_text">전 세계 이용자들을 만나 새로운 경험과 가치를 전하고,<br>글로벌과 호흡하는 기술을 통해, 한 단계 진화한 연결을 만들어갑니다.</p>
+                    <p><strong>3</strong>&nbsp;&nbsp;ㅣ&nbsp;&nbsp;4</p>
+                </div>
+            </div>
+            <div class="slide_logo"></div>
+        </div>
+        <div class="my_slide">
+            <div class="slide_content">
+                <h1>생활환경지능 기술로<br>새로운 연결과 발견의 가능성을 만듭니다</h1>
+                
+                <div>
+                    <p class="content_text">네이버랩스는 사용자의 환경과 상황을 인지하고 이해하여<br>필요한 정보와 서비스를 알아서 자연스럽게 연결하는 기술을 연구합니다.</p>
+                    <p><strong>4</strong>&nbsp;&nbsp;ㅣ&nbsp;&nbsp;4</p>
+                </div>
+            </div>
+            <div class="slide_logo"></div>
+        </div>
+        <a class="button_previous" onclick="slidePrevious()"></a>
+        <a class="button_next" onclick="slideNext()"></a>
+        <div class="slide_progressbar">
+            <span class="slide_progressbar_line" id="current_progressbar"></span>
+        </div>
+    </div>
+    
+
+    <script>
+        var slideIndex = 1; // 현재 보여지는 슬라이드의 넘버
+        var mySlide = document.getElementsByClassName('my_slide'); // 변수에 객체를 넣다.
+        var currentbar = 25;
+               
+               
+            function slidePrevious() {
+                // 모든 슬라이드를 display : none 해주고
+                // 해당하는 슬라이드만 보여지게 하면 좋다.
+                // 반복문 for  i < n 번 반복..
+                console.log(mySlide.length) // 검사, 콘솔에서 바로 확인 가능하다.
+                for (i=0; i<mySlide.length; i++) { mySlide[i].style.display="none" }
+
+                // 조건문
+                if (slideIndex == 1) {
+                mySlide[mySlide.length - 1].style.display = "block";
+                slideIndex = mySlide.length;
+                currentBar = 100;
+                document.getElementById("current_progressbar").style.width = currentBar + "%"
+                }
+
+                // 조건이 아니면 else
+                else {
+                    mySlide[slideIndex - 2].style.display = "block";
+                    slideIndex = slideIndex - 1;
+                    currentBar = 25 * slideIndex + 3 ; 
+                    document.getElementById("current_progressbar").style.width = currentBar + "%"
+                }
+        }
+        
+        
+        function slideNext() {
+                // 반복문 for i < n 번 반복..
+                console.log(mySlide.length)
+                for (i=0; i<mySlide.length; i++) { mySlide[i].style.display="none" }
+                
+                // 조건문 
+                if (slideIndex == mySlide.length) {
+                mySlide[0].style.display = "block";
+                currentBar = 25;
+                document.getElementById("current_progressbar").style.width = currentBar + "%"
+
+                slideIndex = 1;
+                }
+
+                // 조건이 아니면 else
+                else {
+                    mySlide[slideIndex].style.display = "block";
+                    slideIndex = slideIndex + 1;
+                    currentBar = slideIndex * 25;
+                    document.getElementById("current_progressbar").style.width = currentBar + "%"
+                }
+        }
+
+        
+    </script>
+</body>
+</html>

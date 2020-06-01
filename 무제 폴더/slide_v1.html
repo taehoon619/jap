@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>slide_v1</title>
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+<style>
+    .slide_container {
+        width: 60vw;
+        height: 40vh;
+        margin: 0 auto;
+        position: relative;
+    }
+    .my_slide {
+        width: 100%;
+        height: 100%;
+        background-image: url(img/img_main_slide1.jpeg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+    }
+
+    .my_slide1 {
+        width: 100%;
+        height: 100%;
+        background-image: url(img/img_main_slide1.jpeg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+    }
+    .my_slide2 {
+        width: 100%;
+        height: 100%;
+        background-image: url(img/img_main_slide2.jpeg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        display: none;
+    }
+    .my_slide3 {
+        width: 100%;
+        height: 100%;
+        background-image: url(img/img_main_slide3.jpeg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        display: none;
+    }
+
+    .my_slide4 {
+        width: 100%;
+        height: 100%;
+        background-image: url(img/img_main_slide4.jpeg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        display: none;
+    }
+    .button_next {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        color: white;
+    }
+
+    .button_previous {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        color: white;
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="slide_container">
+        <div class="my_slide1" id="myslide_1">Slide 1</div>
+        <div class="my_slide2" id="myslide_2">Slide 2</div>
+        <div class="my_slide3" id="myslide_3">Slide 3</div>
+        <div class="my_slide4" id="myslide_4">Slide 4</div>
+        <a class="button_previous" onclick="slidePrevious()">Previous</a>
+        <a class="button_next" onclick="slideNext()">Next</a>
+    </div>
+
+    <script>
+        var slideIndex = 1; // 현재 보여지는 슬라이드의 넘버
+        function slideNext() {
+
+                // 현재 슬라이드가 1일 경우
+                if (slideIndex == 1) {
+                // 슬라이드2를 보이게 하고 
+                document.getElementById('myslide_1').style.display = "none"
+                document.getElementById('myslide_2').style.display = "block"
+                document.getElementById('myslide_3').style.display = "none"
+                document.getElementById('myslide_4').style.display = "none"
+                slideIndex = 2;
+            }
+                // 현재 슬라이드가 2일 경우 
+                else if (slideIndex == 2) {
+                // 슬라이드3를 보이게 하고 
+                document.getElementById('myslide_1').style.display = "none"
+                document.getElementById('myslide_2').style.display = "none"
+                document.getElementById('myslide_3').style.display = "block"
+                document.getElementById('myslide_4').style.display = "none"
+                slideIndex = 3;
+            }
+                // 현재 슬라이드가 3일 경우
+                else if (slideIndex == 3) {
+                // 슬라이드3를 보이게 하고 
+                document.getElementById('myslide_1').style.display = "none"
+                document.getElementById('myslide_2').style.display = "none"
+                document.getElementById('myslide_3').style.display = "none"
+                document.getElementById('myslide_4').style.display = "block"
+                slideIndex = 4;
+                }
+
+                // 현재 슬라이드가 3일 경우
+                else if (slideIndex == 4) {
+                // 슬라이드3를 보이게 하고 
+                document.getElementById('myslide_1').style.display = "block"
+                document.getElementById('myslide_2').style.display = "none"
+                document.getElementById('myslide_3').style.display = "none"
+                document.getElementById('myslide_4').style.display = "none"
+                slideIndex = 1;
+                }
+        }
+
+        function slidePrevious() {
+                // 현재 슬라이드가 3일 경우
+                if (slideIndex == 4) {
+                // 슬라이드2를 보이게 하고 
+                document.getElementById('myslide_1').style.display = "none"
+                document.getElementById('myslide_2').style.display = "none"
+                document.getElementById('myslide_3').style.display = "block"
+                document.getElementById('myslide_4').style.display = "none"
+                slideIndex = 3;
+                }
+                // 현재 슬라이드가 2일 경우 
+                else if (slideIndex == 3) {
+                // 슬라이드3를 보이게 하고 
+                document.getElementById('myslide_1').style.display = "none"
+                document.getElementById('myslide_2').style.display = "block"
+                document.getElementById('myslide_3').style.display = "none"
+                document.getElementById('myslide_4').style.display = "none"
+                slideIndex = 2;
+                }
+                // 현재 슬라이드가 1일 경우
+                else if (slideIndex == 2) {
+                // 슬라이드3를 보이게 하고 
+                document.getElementById('myslide_1').style.display = "block"
+                document.getElementById('myslide_2').style.display = "none"
+                document.getElementById('myslide_3').style.display = "none"
+                document.getElementById('myslide_4').style.display = "none"
+                slideIndex = 1;
+                }
+                // 현재 슬라이드가 1일 경우
+                else if (slideIndex == 1) {
+                // 슬라이드3를 보이게 하고 
+                document.getElementById('myslide_1').style.display = "none"
+                document.getElementById('myslide_2').style.display = "none"
+                document.getElementById('myslide_3').style.display = "none"
+                document.getElementById('myslide_4').style.display = "block"
+                slideIndex = 4;
+                }
+        }
+    </script>
+</body>
+</html>

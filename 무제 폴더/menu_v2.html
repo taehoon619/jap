@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>menu_v2</title>
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+
+    <style>
+        header {
+            width: 100%;
+        }
+        nav {
+            width: 40%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }
+        nav div {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 0 41px;
+        }
+        a {
+            width: 100%;
+            color: black;
+            cursor: pointer;
+        }
+        #snb1, #snb2, #snb3, #snb4, #snb5, #snb6 {
+            background-color: green;
+            color: white;
+            width: 100%;
+            height: 276px;
+            margin: 0 auto;
+            display: none;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div onmouseover="snbOpen(1)" onmouseout="snbClose()"><a>네이버</a></div>
+            <div onmouseover="snbOpen(2)" onmouseout="snbClose()"><a>서비스</a></div>
+            <div onmouseover="snbOpen(3)" onmouseout="snbClose()"><a>가치실현</a></div>
+            <div onmouseover="snbOpen(4)" onmouseout="snbClose()"><a>홍보</a></div>
+            <div onmouseover="snbOpen(5)" onmouseout="snbClose()"><a>투자정보</a></div>
+            <div onmouseover="snbOpen(6)" onmouseout="snbClose()"><a>채용</a></div>
+        </nav>
+        <div class="snb1" id="snb1" onmouseover="snbOpen(1)" onmouseout="snbClose()">
+            <ul>
+                <div>NAVER</div>
+                <div>주요 관계사</div>
+                <div>제휴 제안</div>
+                <div>CONTACT</div>
+            </ul>
+        </div>
+        <div class="snb1" id="snb2" onmouseover="snbOpen(2)" onmouseout="snbClose()">2</div>
+        <div class="snb1" id="snb3" onmouseover="snbOpen(3)" onmouseout="snbClose()">3</div>
+        <div class="snb1" id="snb4" onmouseover="snbOpen(4)" onmouseout="snbClose()">4</div>
+        <div class="snb1" id="snb5" onmouseover="snbOpen(5)" onmouseout="snbClose()">5</div>
+        <div class="snb1" id="snb6" onmouseover="snbOpen(6)" onmouseout="snbClose()">6</div>
+    </header>
+    <script>
+    function snbOpen(submenuNum) {
+    switch (submenuNum) {
+        case 1: document.getElementById("snb1").style.display = "block"
+        break;
+        case 2: document.getElementById("snb2").style.display = "block"
+        break;
+        case 3: document.getElementById("snb3").style.display = "block"
+        break;
+        case 4: document.getElementById("snb4").style.display = "block"
+        break;
+        case 5: document.getElementById("snb5").style.display = "block"
+        break;
+        case 6: document.getElementById("snb6").style.display = "block"
+        break;
+    }
+    }
+
+    function snbClose() {
+        document.getElementById("snb1").style.display = "none"
+        document.getElementById("snb2").style.display = "none"
+        document.getElementById("snb3").style.display = "none"
+        document.getElementById("snb4").style.display = "none"
+        document.getElementById("snb5").style.display = "none"
+        document.getElementById("snb6").style.display = "none"
+    }
+    </script>
+</body>
+</html>

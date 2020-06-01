@@ -1,0 +1,180 @@
+h1 {
+    font-size: 36px;
+    line-height: 46px;
+    font-family: sans-serif;
+    color: white;
+}
+
+p {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: sans-serif;
+    color: white;
+}
+/* 슬라이더 */
+
+.container {
+    padding: 0 0 160px;
+}
+
+/* 슬라이드 */
+.slide_container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.my_slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: block;
+}
+
+.my_slide:first-child {
+    left: 0;
+}
+
+.my_slide:nth-child(1) {
+    background-image: url(../img/navercorp/img_main_slide1.jpeg);
+    display: block;
+}
+
+.my_slide:nth-child(4) {
+    left: -100%;
+}
+
+.slide_logo1 {
+    width: 190px;
+    height: 36px;
+    background-position: 0 -1063px;
+    position: absolute;
+    bottom: 78px;
+    right: 160px;
+    background-image: url(../img/navercorp/sprite.png);
+}
+
+.my_slide:nth-child(2) {
+    background-image: url(../img/navercorp/img_main_slide2.jpeg);
+}
+
+.slide_logo2 {
+    width: 190px;
+    height: 53px;
+    background-position: -143px -1101px;
+    position: absolute;
+    bottom: 60px;
+    right: 160px;
+    background-image: url(../img/navercorp/sprite.png);
+}
+
+.my_slide:nth-child(3) {
+    background-image: url(../img/navercorp/img_main_slide3.jpeg);
+}
+
+.slide_logo3 {
+    width: 134px;
+    height: 50px;
+    background-position: 0 -1104px;
+    position: absolute;
+    bottom: 70px;
+    right: 160px;
+    background-image: url(../img/navercorp/sprite.png);
+}
+
+
+.my_slide:nth-child(4) {
+    background-image: url(../img/navercorp/img_main_slide4.jpeg);
+}
+
+.slide_logo4 {
+    width: 168px;
+    height: 24px;
+    background-position: -192px -1162px;
+    position: absolute;
+    bottom: 70px;
+    right: 160px;
+    background-image: url(../img/navercorp/sprite.png);
+}
+
+
+
+.slide_content {
+    position: absolute;
+    left: 160px;
+    bottom: 217px;
+}
+
+.slide_content h1 {
+    margin-bottom: 20px;
+}
+
+.slide_progressbar {
+    width: calc(100% - 320px);
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 215px;
+    left: 160px;
+}
+
+.slide_progressbar_line {
+    width: 25%;
+    height: 1px;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.slide_num {
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    left: 160px;
+}
+
+.content_text {
+    margin-bottom: 20px;
+}
+
+.button_next {
+    width: 46px;
+    height: 46px;
+    background-image: url(../img/navercorp/sprite.png);
+    background-position: -346px -99px;
+    position: absolute;
+    bottom: 198px;
+    right: 85px;
+    color: white;
+    opacity: 0.8;
+}
+
+.button_previous {
+    width: 46px;
+    height: 46px;
+    background-image: url(../img/navercorp/sprite.png);
+    background-position: -296px -99px;
+    position: absolute;
+    bottom: 198px;
+    left: 85px;
+    color: white;
+    opacity: 0.8;
+    transition: opacity .3s;
+}
+
+.button_next:hover {
+    opacity: 1;
+}
+
+.button_previous:hover {
+    opacity: 1;
+}

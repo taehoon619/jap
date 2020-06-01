@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>menu_v1</title>
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+
+    <style>
+        header {
+            width: 100%;
+        }
+        nav {
+            width: 40%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }
+        nav div {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 0 41px;
+        }
+        a {
+            width: 100%;
+            color: black;
+            cursor: pointer;
+        }
+        #snb1 {
+            background-color: green;
+            color: white;
+            width: 100%;
+            height: 276px;
+            margin: 0 auto;
+            display: none;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div onmouseover="snbOpen()" onmouseout="snbClose()"><a>네이버</a></div>
+            <div onmouseover="snbOpen()" onmouseout="snbClose()"><a>서비스</a></div>
+            <div onmouseover="snbOpen()" onmouseout="snbClose()"><a>가치실현</a></div>
+            <div onmouseover="snbOpen()" onmouseout="snbClose()"><a>홍보</a></div>
+            <div onmouseover="snbOpen()" onmouseout="snbClose()"><a>투자정보</a></div>
+            <div onmouseover="snbOpen()" onmouseout="snbClose()"><a>채용</a></div>
+        </nav>
+        <div class="snb1" id="snb1" onmouseover="snbOpen()" onmouseout="snbClose()">
+            <ul>
+                <div>NAVER</div>
+                <div>주요 관계사</div>
+                <div>제휴 제안</div>
+                <div>CONTACT</div>
+            </ul>
+        </div>
+    </header>
+    <script>
+    function snbOpen() {
+        document.getElementById("snb1").style.display = "block"
+    }
+
+    function snbClose() {
+        document.getElementById("snb1").style.display = "none"
+    }
+    </script>
+</body>
+</html>

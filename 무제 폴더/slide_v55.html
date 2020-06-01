@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!--  css 링크 -->
+   <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 CSS-->
+
+   <style>
+      h1 {font-size: 36px; line-height: 46px; font-family: sans-serif; color: white; }
+      p {font-size: 15px; line-height: 24px; font-family: sans-serif; color: white;  }
+      .slide_container { width: 100%; height:calc(100% - 240px); margin: 0 auto; position: relative; box-sizing: border-box; overflow: hidden; }
+
+      .myslide { width:100%; height: 100%; background-color: brown; position: absolute;  background-size: cover; background-position: center; display: block; top:0; left:100%;}
+
+      .myslide:first-child {left:0px;}
+      .myslide:nth-child(4) {left:-100%;}
+
+      .button_prev { width: 46px; height: 46px; color: white; position: absolute; bottom:198px; left: 85px; background-image: url(img/navercorp/sprite.png); background-position: -296px -99px; opacity: 0.8; transition: opacity 0.3s; }
+     
+      .button_next { width: 46px; height: 46px; color: white; position: absolute; bottom:198px; right: 85px;
+      background-image: url(img/navercorp/sprite.png); background-position:-346px -99px; opacity: 0.8; transition:
+      opacity 0.3s; }
+      .button_prev:hover {opacity: 1;}
+      .button_next:hover {opacity: 1;}
+
+      .myslide1_bg, .myslide2_bg, .myslide3_bg, .myslide4_bg {width: 100%; height: 100%;  background-size: cover; background-position: center;  }
+
+      .myslide1_bg {background-image: url(img/navercorp/img_main_slide1.jpeg); }
+      .myslide2_bg {background-image: url(img/navercorp/img_main_slide2.jpeg); }
+      .myslide3_bg {background-image: url(img/navercorp/img_main_slide3.jpeg); }
+      .myslide4_bg {background-image: url(img/navercorp/img_main_slide4.jpeg); }
+
+      .myslide_title { position: absolute; left: 160px; bottom: 240px;}
+      .myslide_hr {height: 1px; width: calc(25% - 75px); border-top:1px solid white; margin-bottom: 20px; position: absolute; left:160px; bottom: 221px;} 
+      .myslide_subtitle { position: absolute; left:160px; bottom: 140px; }
+      .slide_progressbar_bg { width: calc(100% - 320px); height: 1px; border-top: 1px solid rgba(255,255,255,0.3); bottom: 221px; left: 160px; position: absolute; }
+      .slide_progressbar { width: 25%; height: 1px; border-top: 1px solid rgba(255,0,0,1); bottom:0px; left: 0px; position: absolute;  }
+      .slide_num { width: auto; height: auto; font-size: 12px; color: white; position: absolute; bottom:100px; left:160px;}
+      .slide_logo1 { width: 190px; height: 36px; position: absolute; bottom: 78px; right:190px; background-image:
+      url(img/navercorp/sprite.png); background-position: 0px -1063px; }
+      .slide_logo2 { width: 190px; height: 53px; position: absolute; bottom: 78px; right:190px; background-image:
+      url(img/navercorp/sprite.png); background-position: -143px -1101px; }
+      .slide_logo3 { width: 134px; height: 50px; position: absolute; bottom: 78px; right:190px; background-image:
+      url(img/navercorp/sprite.png); background-position: 0px -1104px; }
+      .slide_logo4 { width: 168px; height: 24px; position: absolute; bottom: 78px; right:190px; background-image:
+      url(img/navercorp/sprite.png); background-position: -192px -1162px; }
+
+   </style>
+
+</head>
+<body>
+   <div class="slide_container">   
+      <div class="myslide">
+         <div class="myslide1_bg">
+            <h1 class="myslide_title">삶의 가치를 높이는<br>기술을 연구합니다.</h1>
+            <p class="myslide_subtitle">당신이 더 가치 있는 일에 몰입할 수 있도록<br>삶을 더 깊이 이해하는 기술을 만들어 갑니다.</p>
+            <div class="slide_logo1"></div>
+         </div>
+      </div>
+      <div class="myslide">
+         <div class="myslide2_bg">
+            <h1 class="myslide_title">무한한 가능성과의<br>만남을 기대합니다.</h1>
+            <p class="myslide_subtitle">다양한 스몰비즈니스와 크리에이터의 가치가 발견되고<br>그 이름을 꽃 피울 수 있도록 함께합니다.</p>
+            <div class="slide_logo2"></div>
+         </div>
+      </div>
+      <div class="myslide">
+         <div class="myslide3_bg">
+            <h1 class="myslide_title">더 넓은 세상에서<br>더 큰 미래를 생각합니다.</h1>
+            <p class="myslide_subtitle">전 세계 이용자들을 만나 새로운 경험과 가치를 전하고,<br>글로벌과 호흡하는 기술을 통해, 한 단계 진화한 연결을 만들어갑니다.</p>
+            <div class="slide_logo3"></div>
+           
+         </div>
+      </div>
+      <div class="myslide">
+         <div class="myslide4_bg">
+            <h1 class="myslide_title">삶의 가치를 높이는<br>기술을 연구합니다.</h1>
+            <p class="myslide_subtitle">당신이 더 가치 있는 일에 몰입할 수 있도록<br>삶을 더 깊이 이해하는 기술을 만들어 갑니다.</p>
+            <div class="slide_logo4"></div>
+           
+         </div>
+      </div>
+   
+      <a class="button_prev" onclick="slidePrev()"></a>
+      <a class="button_next" onclick="slideNext()"></a>
+      <div class="slide_progressbar_bg">
+         <span class="slide_progressbar" id="current_progressbar"></span>
+      </div>
+      <div class="slide_num">
+         <strong id="slide_current_num">1</strong>&nbsp;&nbsp;|&nbsp;&nbsp;4
+      </div>
+     
+      
+   </div>
+   
+
+   <script>
+
+      var slideIndex = 0; // 현재 보여지는 슬라이드의 넘버
+      
+      var mySlide = document.getElementsByClassName('myslide');
+      var currentBar = 25;
+      
+
+      function slidePrev() { 
+
+    
+          if (slideIndex == 1){ 
+
+            mySlide[0].style="left:100%; transition: left 0.5s;";
+            mySlide[mySlide.length - 1].style="left:0px; transition: left 0.5s;";
+            
+            slideIndex = mySlide.length; 
+            currentBar = 100;
+            document.getElementById("current_progressbar").style.width = currentBar + "%";
+            document.getElementById("slide_current_num").innerHTML = slideIndex;
+
+            } 
+            
+         else {
+               mySlide[slideIndex - 1].style="left:100%; transition: left 0.5s;";
+               mySlide[slideIndex - 2].style="left:0px; transition: left 0.5s;";
+
+           
+
+               console.log(slideIndex); // debug를 위한 추적 코드
+
+               slideIndex = slideIndex - 1;
+               currentBar = slideIndex * 25;
+
+               console.log(slideIndex); // debug를 위한 추적 코드
+
+               document.getElementById("current_progressbar").style.width = currentBar + "%";
+               document.getElementById("slide_current_num").innerHTML = slideIndex;
+            }
+
+      }
+
+      function slideNext() { 
+
+        console.log(mySlide.length)
+
+            
+        if (slideIndex == mySlide.length - 1) { 
+
+            mySlide[slideIndex].style="left:-100%; transition: left 0.5s;"; // 현재 슬라이드 왼쪽으로 아웃
+            mySlide[slideIndex + 1].style="left:0px; transition: left 0.5s;"; // 다음 슬라이드 왼쪽으로 인
+
+            mySlide[0].style="left:100%; "; // 다음 다음 슬라이드 오른쪽으로 준비 - 1번 슬라이드를 준비
+
+              }
+        else if (slideIndex == mySlide.length)  {
+
+            mySlide[slideIndex].style="left:-100%; transition: left 0.5s;"; // 현재 슬라이드 왼쪽으로 아웃
+            mySlide[0].style="left:0px; transition: left 0.5s;"; // 다음 슬라이드 왼쪽으로 인
+
+            mySlide[1].style="left:100%; "; // 다음 다음 슬라이드 오른쪽으로 준비 - 2번 슬라이드를 준비
+
+        }
+
+        else { 
+
+            mySlide[slideIndex].style="left:-100%; transition: left 0.5s;"; // 현재 슬라이드 왼쪽으로 아웃
+            mySlide[slideIndex + 1].style="left:0px; transition: left 0.5s;"; // 다음 슬라이드 왼쪽으로 인
+
+            mySlide[slideIndex + 2].style="left:100%; "; // 다음 다음 슬라이드 오른쪽으로 준비
+
+        
+         }
+         
+          // 다음 다음 슬라이드 오른쪽에 준비
+         
+        slideIndex = slideIndex + 1; 
+        if (slideIndex > mySlide.length - 1) { slideIndex = 0; }
+        // 슬라이드 인덱스 증가
+
+          /*    
+          if (slideIndex == mySlide.length)  { 
+            
+               mySlide[slideIndex - 1].style="left:-100%; transition: left 0.5s;";
+               mySlide[0].style="left:0px; transition: left 0.5s;";
+
+               currentBar = 25;
+               document.getElementById("current_progressbar").style.width = currentBar + "%";
+               slideIndex = 1;
+               document.getElementById("slide_current_num").innerHTML = slideIndex;
+            }
+
+         else {
+
+            */
+            /*
+               mySlide[slideIndex - 1].style="left:-100%; transition: left 0.5s;"; 
+               mySlide[slideIndex].style="left:0px; transition: left 0.5s;";
+
+               if (slideIndex != mySlide.length - 1)
+               {
+               mySlide[slideIndex + 1].style="left:100%;"; // 다음 슬라이드를 오른쪽에 대기
+               } else { mySlide[0].style="left:100%;"; slideIndex = 1; return;  }
+               //if (slideIndex == mySlide.length - 1)
+               //{
+               //   mySlide[0].style="left:100%;";
+               //}
+
+               console.log(slideIndex); // debug를 위한 추적 코드
+
+               slideIndex = slideIndex + 1;
+               currentBar = slideIndex * 25;
+
+               console.log(slideIndex); // debug를 위한 추적 코드
+
+               document.getElementById("current_progressbar").style.width=currentBar + "%";
+               document.getElementById("slide_current_num").innerHTML = slideIndex;
+                  */
+             }
+   </script>
+</body>
+</html>
