@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
+    <p id="result5"></p>
+    <p id="result6"></p>
+    <p id="result7"></p>
+
+    <script>
+        var windowHref = window.location.href
+        var windowHost = window.location.hostname
+
+        document.getElementById("result1").innerHTML = windowHref
+        document.getElementById("result2").innerHTML = windowHost
+
+        /* window screen
+       // var windowX = window.innerWidth
+       // var windowY = window.innerHeight
+        var windowX = document.body.clientWidth
+        var windowY = document.body.clientHeight
+
+        var windowXx = screen.width
+        var windowYy = screen.height
+
+        var windowXxx = screen.availWidth
+        var windowYyy = screen.availHeight
+
+        var windowColor = screen.colorDepth
+
+
+        document.getElementById("result1").innerHTML = "Window Width is : " + windowX
+        document.getElementById("result2").innerHTML = "Window Width is : " + windowY
+
+        document.getElementById("result3").innerHTML = "Screen Width is : " + windowXx
+        document.getElementById("result4").innerHTML = "Screen Width is : " + windowYy
+
+        document.getElementById("result5").innerHTML = "Screen AvailWidth is : " + windowXxx
+        document.getElementById("result6").innerHTML = "Screen AvailWidth is : " + windowYyy
+
+        document.getElementById("result7").innerHTML = "Screen colorDepth is : " + windowColor
+        */
+    </script>
+</body>
+</html>
